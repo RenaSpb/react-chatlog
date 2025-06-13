@@ -5,6 +5,7 @@ import data from './data/messages.json';
 
 const App = () => {
   const [messages, setMessage] = useState(data);
+  const localSender = messages[0].sender;
 
   const likeToggle = (id) => (
     setMessage(prev => prev.map( message =>
@@ -32,6 +33,7 @@ const App = () => {
         <ChatLog
           entries={messages}
           likeToggle = {likeToggle}
+          localSender = {localSender}
         />
       </main>
     </div>
