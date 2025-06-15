@@ -43,7 +43,7 @@ const App = () => {
           <div className="color-chooser-row">
             <ColorChoice setColorCallback={setLocalColorClass} />
           </div>
-          <p>{count} {count < 2 ? '❤️' : '❤️s'}</p>
+          <p className='heart-class'>{count} {count < 2 ? '❤️' : '❤️s'}</p>
           <div className="color-chooser-row">
             <ColorChoice setColorCallback={setRemoteColorClass} />
           </div>

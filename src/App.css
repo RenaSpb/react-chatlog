@@ -1,5 +1,10 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1.0px;
+}
+
 #App {
-  background-color: #87cefa;
+  background-color: #d0cccf;
 }
 
 #App header {
@@ -61,27 +66,27 @@
 }
 
 .color-button.red {
-  background: linear-gradient(135deg, #8b0000, #ff4d4d);
+  background: linear-gradient(0deg, #8b0000, #ff4d4d);
 }
 
 .color-button.orange {
-  background: linear-gradient(135deg, #ff8000, #ffd280);
+  background: linear-gradient(0deg, #ff8000, #ffd280);
 }
 
 .color-button.yellow {
-  background: linear-gradient(135deg, #ffff66, #ffeb3b);
+  background: linear-gradient(0deg, #ffff66, #ffeb3b);
 }
 
 .color-button.green {
-  background: linear-gradient(135deg, #228B22, #90ee90);
+  background: linear-gradient(0deg, #228B22, #90ee90);
 }
 
 .color-button.blue {
-  background: linear-gradient(135deg, #4169e1, #87cefa);
+  background: linear-gradient(0deg, #4169e1, #87cefa);
 }
 
 .color-button.purple {
-  background: linear-gradient(135deg, #800080, #da70d6);
+  background: linear-gradient(0deg, #800080, #da70d6);
 }
 
 .text-color.red {
@@ -95,7 +100,7 @@
 }
 
 .text-color.yellow {
-  color: #e8d60c;
+  color: #ffee30;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -110,7 +115,7 @@
 }
 
 .text-color.purple {
-  color: #4b0082;
+  color: #9138d2;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -135,4 +140,8 @@
 .text-color.blue,
 .text-color.purple {
   transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.heart-class {
+  font-size: 22px;
 }
