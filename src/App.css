@@ -49,26 +49,90 @@
   display: inline-block
 }
 
-.red {
-  color: #b22222
+.color-button {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.orange {
-  color: #e6ac00
+.color-button.red {
+  background: linear-gradient(135deg, #8b0000, #ff4d4d);
 }
 
-.yellow {
-  color: #e6e600
+.color-button.orange {
+  background: linear-gradient(135deg, #ff8000, #ffd280);
 }
 
-.green {
-  color: green
+.color-button.yellow {
+  background: linear-gradient(135deg, #ffff66, #ffeb3b);
 }
 
-.blue {
-  color: blue
+.color-button.green {
+  background: linear-gradient(135deg, #228B22, #90ee90);
 }
 
-.purple {
-  color: purple
+.color-button.blue {
+  background: linear-gradient(135deg, #4169e1, #87cefa);
+}
+
+.color-button.purple {
+  background: linear-gradient(135deg, #800080, #da70d6);
+}
+
+.text-color.red {
+  color: #c92d2d;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-color.orange {
+  color: #fa9633;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-color.yellow {
+  color: #e8d60c;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-color.green {
+  color: #2a8e2a;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-color.blue {
+  color: #5d92d2;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text-color.purple {
+  color: #4b0082;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+.header-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.color-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.text-color.red,
+.text-color.orange,
+.text-color.yellow,
+.text-color.green,
+.text-color.blue,
+.text-color.purple {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
