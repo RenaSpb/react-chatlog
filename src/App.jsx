@@ -16,15 +16,7 @@ const App = () => {
     ))
   );
 
-  const likedCount = () => {
-    let count = 0;
-    for (let message of messages) {
-      if (message.liked) {count += 1;}
-    }
-    return count;
-  };
-
-  const count = likedCount();
+  const likedCount = () => messages.filter((message) => message.liked).length;
 
   return (
     <div id="App">
@@ -43,7 +35,7 @@ const App = () => {
           <div className="color-chooser-row">
             <ColorChoice setColorCallback={setLocalColorClass} />
           </div>
-          <p className='heart-class'>{count} {count < 2 ? '❤️' : '❤️s'}</p>
+          <p className='heart-class'>{likedCount()} {likedCount() < 2 ? '❤️' : '❤️s'}</p>
           <div className="color-chooser-row">
             <ColorChoice setColorCallback={setRemoteColorClass} />
           </div>
